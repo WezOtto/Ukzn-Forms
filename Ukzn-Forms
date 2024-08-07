@@ -1,89 +1,75 @@
-<html>
- <head> 
-  <meta charset="utf-8"> 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"> 
-  <title>UKZN - University Forms System</title> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/font-awesome.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/material-design-iconic-font.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/bootstrap.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/animate.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/layout.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/components.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/widgets.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/plugins.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/pages.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/bootstrap-extend.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/common.css"> 
-  <link type="text/css" rel="stylesheet" href="/Views/Templates/Westilo/css/responsive.css"> 
-  <link href="/Styles/jquery-ui.min.css" rel="stylesheet" type="text/css"> 
-  <link href="/Styles/jquery-ui.structure.min.css" rel="stylesheet" type="text/css"> 
-  <link href="/Styles/jquery-ui.theme.min.css" rel="stylesheet" type="text/css"> 
- </head> 
- <body class="login-page"> 
-  <!--Page Container Start Here--> 
-  <section class="login-container boxed-login"> 
-   <div class="container"> 
-    <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4"> 
-     <div class="login-form-container"> 
-      <form action="/Default/Account/Login" class="j-forms" id="forms-login" method="post" novalidate> 
-       <div class="login-form-header"> 
-        <div class="logo"> 
-         <a href="/" title="Admin Template"><img src="/Views/Templates/Westilo/images/ukzn_logo.png" alt="logo" style="width:90%;"></a> 
-        </div> 
-       </div> 
-       <div class="login-form-content"> 
-        <div class="unit"> 
-        </div> 
-        <!-- start login --> 
-        <div class="unit"> 
-         <div class="input login-input"> 
-          <label class="icon-left" for="login"> <i class="zmdi zmdi-account"></i> </label> 
-          <input class="form-control login-frm-input" data-val="true" data-val-required="The User name field is required." id="login" name="UserName" placeholder="Username" type="text" value=""> 
-         </div> 
-        </div> 
-        <!-- end login --> 
-        <!-- start password --> 
-        <div class="unit"> 
-         <div class="input login-input"> 
-          <label class="icon-left" for="password"> <i class="zmdi zmdi-key"></i> </label> 
-          <input class="form-control login-frm-input" data-val="true" data-val-required="The Password field is required." id="password" name="Password" placeholder="Password" type="password"> 
-          <span class="hint"> <a href="https://passwordchange.ukzn.ac.za" class="link" target="_blank">Forgot password?</a> </span> 
-         </div> 
-        </div> 
-        <!-- end password --> 
-        <!-- start keep logged --> 
-        <div class="unit"> 
-         <label class="checkbox"> <input type="checkbox" name="RememberMe" value="true" checked> <i></i> Keep me logged in </label> 
-        </div> 
-        <!-- end keep logged --> 
-        <!-- start response from server --> 
-        <div class="response"></div> 
-        <!-- end response from server --> 
-       </div> 
-       <div class="login-form-footer"> 
-        <button type="submit" class="btn-block btn btn-primary">Sign in</button> 
-       </div> 
-      </form>
-     </div> 
-    </div> 
-   </div> 
-   <!--Footer Start Here --> 
-   <footer class="login-page-footer"> 
-    <div class="container"> 
-     <div class="row"> 
-      <div class="col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4"> 
-       <div class="footer-content"> 
-        <!--<span class="footer-meta">Crafted with&nbsp;<i class="fa fa-heart"></i>&nbsp;by&nbsp;<a href="http://themeforest.net/user/westilian">westilian</a></span>--> 
-       </div> 
-      </div> 
-     </div> 
-    </div> 
-   </footer> 
-   <!--Footer End Here --> 
-  </section> 
-  <!--Page Container End Here--> 
-  <!-- --> 
-  <!-- --> 
- </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+  <title>ITS Web Interface</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="itsincludes/css/its.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="itsincludes/js/its_scripts.js"></script>
+  <script src="itsincludes/js/overlib.js"></script>
+  <script src="itsincludes/js/tablesort.js"></script>
+</head>
+<body class="w3-content" style="max-width:1920px;">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" id="mySidebar" style="z-index:3; width:350px;">
+    <!-- Logo -->
+    <div class="flex-container" style="flex-direction: row;">
+      <div><img src="itsimages/InsImg.gif" style="width:80%; height:80%;"></div>
+      <!-- Close menu button - small screen -->
+      <div><i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i></div>
+      <!-- Menu content -->
+      <div class="w3-large w3-text-grey" style="overflow: auto;">
+        <iframe id="F1" name="F1" class="w3-wide" src="w99pkg.mi_frame_menu" style="border: none; width:98%; height:98%"></iframe>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-bar w3-top w3-hide-large w3-light-blue w3-xlarge">
+    <div class="w3-bar-item w3-left">
+      <img class="w3-image itsmnuimg" src="itsimages/InsImg.gif">
+    </div>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:350px">
+    <!-- Push down content on small screens -->
+    <div class="w3-bar-item w3-left w3-hide-large" style="margin-top:10px">
+      <img class="w3-image itsmnuimg" src="itsimages/InsImg.gif">
+    </div>
+    <!-- Content header -->
+    <header class="w3-container w3-medium">
+      <div id="fra_header" class="fra_header w3-hide-small">
+        <div class="fra_inst">WALTER SISULU UNIVERSITY</div>
+        <div class="fra_date">
+          <script type="text/javascript">prt_header_datestamp();</script>
+        </div>
+      </div>
+    </header>
+    <!-- Content -->
+    <div class="w3-display-container w3-container">
+      <iframe id="F3" name="F3" src="w99pkg.mi_frame_main"></iframe>
+    </div>
+    <!-- Content footer -->
+    <footer class="w3-light-grey w3-small w3-center w3-hide-small" id="footer">
+      <div class="progress" style="width:50%; display:none;" id="fra_summary">&nbsp;</div>
+      <div class="container main_footer" id="fra_footer" style="display:block;">
+        <div class="row">
+          <div class="col-sm-12"><script src="itsincludes/js/footer.js"></script></div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
 </html>
